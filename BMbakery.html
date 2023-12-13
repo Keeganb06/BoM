@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" >
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <script src="cart.js" defer></script>
+        <title>Bakery</title>
+        <h1>Baked Goods</h1> 
+        <style>
+            #name{
+                background-color: rgb(192, 192, 236);
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #t01 {
+              width: 100%;  
+              border-collapse: collapse;  
+              background-color: rgba(112, 111, 111, 0.822);
+            }
+            #buttons {
+                background-color: rgb(192, 192, 236);
+                color: white;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: large;  
+            }
+            #buttons a:hover {
+                background-color: whitesmoke;
+                color: rgb(80, 64, 224);
+            }
+            </style>  
+            <div class="cart">
+              <img src="cart.png" alt="cart" height="50px" width="50px" style="position: fixed; top: 0; right: 0; border: 0;">
+              <figcaption><p id="output">1</p></figcaption>
+            </div>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BMabout.html">About</a></li>
+            <li><a href="BMbakery.html">Baked Goods</a></li>
+            <li><a href="BMcontact.html">Contact Us</a></li>
+          </ul>
+          <h2>Check out our baked goods!</h2>
+          <h3>Made fresh daily:</h3>
+            <table style="width: 200px;" align="center" id="t01">
+                <tr>
+                  <td><img src="rye.jpg" width="200" height="200" alt="rye bread"></td>
+                  <td><img src="sour.jpg" width="200" height="200" alt="sourdough bread"></td>
+                  <td><img src="banana.jpg" width="200" height="200" alt="banana bread"></td>
+                  <td><img src="lemon.jpg" width="200" height="200" alt="lemon loaf"></td>
+                </tr>
+                <tr>
+                    <td id="name">Rye Bread</td>
+                    <td id="name">Sourdough Bread</td>
+                    <td id="name">Banana Walnut Bread</td>
+                    <td id="name">Lemon Loaf</td>
+                </tr>
+                <tr>
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>   
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>  
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>
+                </tr>
+                <tr>
+                  <td><img src="lime.jpg" width="200" height="200" alt="key lime pie"></td>
+                  <td><img src="donuts.jpg" width="200" height="200" alt="donunts"></td>
+                  <td><img src="apple.jpg" width="200" height="200" alt="apple fritters"></td>
+                  <td><img src="cake.jpg" width="200" height="200" alt="custom cakes"></td>
+                </tr>
+                <tr>
+                  <td id="name">Key Lime Pie</td>
+                  <td id="name">Donuts</td>
+                  <td id="name">Apple Fritters</td>
+                  <td id="name">Custom Cakes</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>   
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>
+                  <td><button class="btn" onclick="add()">Add to cart</button></td>             
+                  <td><button><a href="BMcontact.html">Please Call</td></a></button>
+                </tr>
+              </table>
+              <h3 style="text-align: center;">
+                All of our treats are fresh made in-house. We also do custom orders.
+              </h3> 
+    </body>
+    <footer>
+        <div class="footer">This website is for a Web Technologies 
+            class and no products or services are available for purchase</div>
+    </footer>
+</html>
